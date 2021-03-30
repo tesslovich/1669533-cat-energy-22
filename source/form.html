@@ -45,9 +45,9 @@
 
       <fieldset class="form__data-cat">
         <label for="name">ИМЯ:*</label>
-        <input type="text" id="name" name="name" placeholder="барсик">
+        <input type="text" id="name" name="name" placeholder="барсик" required>
         <label for="weight">Вес (кг):*</label>
-        <input type="number" id="weight" name="weight" placeholder="7">
+        <input type="number" id="weight" name="weight" placeholder="7" required>
         <label for="age">Возраст (лет):</label>
         <input type="number" id="age" name="age" placeholder="7">
       </fieldset>
@@ -56,15 +56,15 @@
         <ul class="radio__list">
           <li class="radio__item">
             <label for="slimming">похудение</label>
-            <input type="radio" id="slimming" name="slimming" checked>
+            <input type="radio" id="slimming" value="slimming" name="programm" checked>
           </li>
           <li class="radio__item">
             <label for="well-fed">Набор массы</label>
-            <input type="radio" id="well-fed" name="well-fed">
+            <input type="radio" id="well-fed" value="well-fed" name="programm">
           </li>
           <li class="radio__item">
             <label for="advice">Не знаю (Нужен ваш совет)</label>
-            <input type="radio" id="advice" name="advice">
+            <input type="radio" id="advice" value="advice" name="programm">
           </li>
         </ul>
       </fieldset>
@@ -73,15 +73,16 @@
         <legend class="contact-info__title">Контактные данные
           (владельца кота)</legend>
         <label for="email">E-mail:*</label>
-        <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
+        <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
         <label for="tel">Телефон:*</label>
-        <input type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90">
+        <input type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
       </fieldset>
 
       <fieldset class="form__comments comments">
         <legend class="comments__title">Комментарий</legend>
         <label for="comments"></label>
-        <textarea class="comments__field" id="comments" name="comments" placeholder="Расскажите обо всех повАдках кота"></textarea>
+        <textarea class="comments__field" id="comments" name="comments"
+          placeholder="Расскажите обо всех повАдках кота"></textarea>
       </fieldset>
 
       <fieldset class="form__additionally additionally">
@@ -147,3 +148,5 @@
 
 
 </body>
+
+</html>

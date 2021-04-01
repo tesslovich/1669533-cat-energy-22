@@ -1,0 +1,22 @@
+.page-header {
+  border: 4px double black;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+
+.page-header__logo,
+.main-nav__item-link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+
+.main-nav__list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}

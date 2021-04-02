@@ -19,17 +19,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">
+            <a class="main-nav__item-link" href="index.html">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">
+            <a class="main-nav__item-link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-nav__item main-nav__item_activ">
-            <a href="#">
+            <a class="main-nav__item-link" href="#">
               Подбор программы
             </a>
           </li>
@@ -44,13 +44,19 @@
       программу питания для вашего кота</h2>
     <form class="form" method="GET" action="https://echo.htmlacademy.ru">
 
-      <fieldset class="form__data-cat">
-        <label for="name">ИМЯ:*</label>
-        <input type="text" id="name" name="name" placeholder="барсик" required>
-        <label for="weight">Вес (кг):*</label>
-        <input type="number" id="weight" name="weight" placeholder="7" required>
-        <label for="age">Возраст (лет):</label>
-        <input type="number" id="age" name="age" placeholder="7">
+      <fieldset class="form__data-cat data-cat">
+        <div class="data-cat__wrapper">
+          <label for="name">ИМЯ:*</label>
+          <input type="text" id="name" name="name" placeholder="БАРСИК" required>
+        </div>
+        <div class="data-cat__wrapper">
+          <label for="weight">Вес (кг):*</label>
+          <input type="number" id="weight" name="weight" placeholder="7" required>
+        </div>
+        <div class="data-cat__wrapper">
+          <label for="age">Возраст (лет):</label>
+          <input type="number" id="age" name="age" placeholder="7">
+        </div>
       </fieldset>
 
       <fieldset class="form__radio radio">
@@ -73,16 +79,22 @@
       <fieldset class="form__contact-info contact-info">
         <legend class="contact-info__title">Контактные данные
           (владельца кота)</legend>
-        <label for="email">E-mail:*</label>
-        <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-        <label for="tel">Телефон:*</label>
-        <input type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+        <ul class="contact-info__list">
+          <li class="contact-info__item">
+            <label for="email">E-mail:*</label>
+            <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+          </li>
+          <li class="contact-info__item">
+            <label for="tel">Телефон:*</label>
+            <input type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+          </li>
+        </ul>
       </fieldset>
 
       <fieldset class="form__comments comments">
         <label class="comments__heading" for="comments">Комментарий</label>
         <textarea class="comments__field" id="comments" name="comments"
-          placeholder="Расскажите обо всех повАдках кота"></textarea>
+          placeholder="РАССКАЖИЕТ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
       </fieldset>
 
       <fieldset class="form__additionally additionally">

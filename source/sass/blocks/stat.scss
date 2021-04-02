@@ -1,0 +1,39 @@
+.stat__preview {
+  font-family: "Arial", sans-serif;
+  margin-bottom: 25px;
+}
+
+
+.stat__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+
+.stat__item {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+
+.stat__time,
+.stat__weight {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.stat__text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+
+.stat__expenses {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

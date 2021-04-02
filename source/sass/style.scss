@@ -3,7 +3,7 @@
 /* GLOBAL */
 
 
-@import "./variables/variables.scss";
+@import "./global/variables.scss";
 @import "./global/fonts.scss";
 @import "./global/page.scss";
 @import "./blocks/page-body.scss";
@@ -23,3 +23,10 @@
 @import "./blocks/social.scss";
 @import "./blocks/stat.scss";
 @import "./blocks/cart.scss";
+@import "./blocks/page-form.scss";
+@import "./blocks/form.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/data-cat.scss";
+@import "./blocks/contact-info.scss";
+@import "./blocks/comments.scss";
+@import "./blocks/additionally.scss";

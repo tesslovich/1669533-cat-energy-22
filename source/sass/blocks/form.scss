@@ -1,0 +1,28 @@
+.form__data-cat {
+  text-transform: uppercase;
+}
+
+
+.form__data-cat,
+.form__radio,
+.form__contact-info,
+.form__comments,
+.form__additionally {
+  padding: 0;
+}
+
+
+.form__submit {
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  background-color: var(--basic_green);
+  color: var(--white);
+  margin: 0 0 21px 0;
+}
+
+
+.form__warning {
+  font-size: 14px;
+  line-height: 16px;
+}

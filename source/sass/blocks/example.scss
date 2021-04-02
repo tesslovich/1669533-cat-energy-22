@@ -1,0 +1,26 @@
+.example {
+  border: 4px double black;
+  background-color: var(--background_grey);
+}
+
+
+.example__heading {
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+
+.example__slider-image {
+  margin-bottom: 20px;
+}
+
+
+.example__button-past,
+.example__button-future {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+}

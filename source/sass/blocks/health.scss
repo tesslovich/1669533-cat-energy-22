@@ -1,0 +1,25 @@
+.health {
+  border: 4px double black;
+  margin-top: 27px;
+}
+
+
+.health__heading {
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+
+.health__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.health__item {
+  margin-bottom: 25px;
+  color: var(--special_dark-grey);
+}

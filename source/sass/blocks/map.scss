@@ -1,0 +1,25 @@
+.map {
+  border: 4px double black;
+}
+
+
+.map__wrapper {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.map__title {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+
+.map__adress {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}

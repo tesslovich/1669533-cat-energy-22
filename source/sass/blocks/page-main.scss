@@ -1,0 +1,30 @@
+.page-main__heading {
+  margin: 0;
+  background-color: var(--basic_green);
+  color: var(--white);
+}
+
+
+.page-main__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+.page-main__subtitle {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+
+.page-main__button-program {
+  text-decoration: none;
+  background-color: var(--basic_green);
+  color: var(--white);
+}

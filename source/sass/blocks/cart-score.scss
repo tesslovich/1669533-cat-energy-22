@@ -1,0 +1,19 @@
+.cart-score {
+  margin: 0 0 25px 0;
+}
+
+
+.cart-score__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--black_light);
+  text-transform: uppercase;
+}
+
+
+.cart-score__link {
+  color: var(--special_dark-grey);
+  border: none;
+  background-color: var(--basic_grey);
+}

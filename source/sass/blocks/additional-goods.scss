@@ -1,0 +1,56 @@
+.additional-goods__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0 0 36px 0;
+}
+
+
+.additional-goods__list {
+  list-style: none;
+  padding: 0;
+}
+
+
+.additional-goods__table__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--special_dark-grey-2);
+  text-transform: uppercase;
+  margin: 0 0 13px 0;
+}
+
+
+.additional-goods__table__size {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--special_dark-grey);
+  margin: 0 0 15px 0;
+}
+
+
+.additional-goods__table__coast {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--special_dark-grey);
+  margin: 0;
+}
+
+
+.additional-goods__table__order {
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  color: var(--white);
+  background-color: var(--basic_green);
+}
+
+
+.additional-goods__bonus {
+  margin: 39px 0 35px 0;
+  font-size: 16px;
+  line-height: 20px;
+}

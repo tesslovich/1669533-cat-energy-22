@@ -1,6 +1,14 @@
 .health {
-  border: 4px double black;
   margin-top: 27px;
+  width: 280px;
+
+  @media (min-width: 768px) {
+    width: 708px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1219px;
+  }
 }
 
 
@@ -16,6 +24,11 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 

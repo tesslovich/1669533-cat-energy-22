@@ -1,6 +1,14 @@
 .example {
-  border: 4px double black;
   background-color: var(--background_grey);
+  width: 320px;
+
+  @media (min-width: 768px) {
+    width: 708px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1219px;
+  }
 }
 
 

@@ -1,7 +1,25 @@
+.cart {
+  height: 266px;
+  width: 280px;
+  margin: 0 0 20px 0;
+
+  @media (min-width: 768px) {
+    width: 708px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 570px;
+  }
+}
+
+
 .cart__heading {
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 

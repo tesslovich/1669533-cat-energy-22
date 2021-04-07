@@ -46,37 +46,39 @@
 
     <form class="form" method="GET" action="https://echo.htmlacademy.ru">
 
-      <fieldset class="form__data-cat data-cat">
-        <div class="data-cat__wrapper">
-          <label for="name">ИМЯ:*</label>
-          <input type="text" id="name" name="name" placeholder="БАРСИК" required>
-        </div>
-        <div class="data-cat__wrapper">
-          <label for="weight">Вес (кг):*</label>
-          <input type="number" id="weight" name="weight" placeholder="7" required>
-        </div>
-        <div class="data-cat__wrapper">
-          <label for="age">Возраст (лет):</label>
-          <input type="number" id="age" name="age" placeholder="7">
-        </div>
-      </fieldset>
+      <div class="form__wrapper-block">
+        <fieldset class="form__data-cat data-cat">
+          <div class="data-cat__wrapper">
+            <label for="name">ИМЯ:*</label>
+            <input type="text" id="name" name="name" placeholder="БАРСИК" required>
+          </div>
+          <div class="data-cat__wrapper">
+            <label for="weight">Вес (кг):*</label>
+            <input type="number" id="weight" name="weight" placeholder="7" required>
+          </div>
+          <div class="data-cat__wrapper">
+            <label for="age">Возраст (лет):</label>
+            <input type="number" id="age" name="age" placeholder="7">
+          </div>
+        </fieldset>
 
-      <fieldset class="form__radio radio">
-        <ul class="radio__list">
-          <li class="radio__item">
-            <label for="slimming">похудение</label>
-            <input type="radio" id="slimming" value="slimming" name="programm" checked>
-          </li>
-          <li class="radio__item">
-            <label for="well-fed">Набор массы</label>
-            <input type="radio" id="well-fed" value="well-fed" name="programm">
-          </li>
-          <li class="radio__item">
-            <label for="advice">Не знаю (Нужен ваш совет)</label>
-            <input type="radio" id="advice" value="advice" name="programm">
-          </li>
-        </ul>
-      </fieldset>
+        <fieldset class="form__radio radio">
+          <ul class="radio__list">
+            <li class="radio__item">
+              <label for="slimming">похудение</label>
+              <input type="radio" id="slimming" value="slimming" name="programm" checked>
+            </li>
+            <li class="radio__item">
+              <label for="well-fed">Набор массы</label>
+              <input type="radio" id="well-fed" value="well-fed" name="programm">
+            </li>
+            <li class="radio__item">
+              <label for="advice">Не знаю (Нужен ваш совет)</label>
+              <input type="radio" id="advice" value="advice" name="programm">
+            </li>
+          </ul>
+        </fieldset>
+      </div>
 
       <fieldset class="form__contact-info contact-info">
         <legend class="contact-info__title">Контактные данные

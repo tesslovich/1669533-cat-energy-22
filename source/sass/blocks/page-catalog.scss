@@ -10,10 +10,29 @@
   font-size: 36px;
   line-height: 36px;
   margin: 27px 0 49px 0;
+  width: 320px;
+
+  @media (min-width: 768px) {
+    width: 708px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1220px;
+  }
 }
 
 
 .page-catalog__list {
   list-style: none;
   padding: 0;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

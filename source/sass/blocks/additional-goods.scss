@@ -11,6 +11,17 @@
 }
 
 
+.additional-goods__wrapper {
+  @media (min-width: 768px) {
+    width: 708px;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+  }
+}
+
+
 .additional-goods__heading {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;

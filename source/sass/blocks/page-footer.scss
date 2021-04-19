@@ -3,11 +3,35 @@
   width: 320px;
 
   @media (min-width: 768px) {
-    width: 768px;
+    width: 100%;
+    padding: 22px 0 28px 0;
   }
 
   @media (min-width: 1440px) {
-    width: 1220px;
+    width: 100%;
+    padding: 25px 0 29px 0;
+  }
+}
+
+
+.page-footer__footer-img {
+  width: 128px;
+  height: 93px;
+}
+
+
+.page-footer__footer-logo {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -2px;
+
+  @media (min-width: 768px) {
+    margin: 0 0 0 30px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 0 0 110px;
   }
 }
 
@@ -19,16 +43,62 @@
 }
 
 
-.page-footer__footer-logo,
 .page-footer__copyright-link {
+  position: relative;
+  color: var(--special_dark-grey);
+  min-height: 79px;
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  &::after {
+    content: url("../../img/vector_pict/academy_icon.svg");
+    position: absolute;
+    right: -168px;
+    top: -7px;
+
+    @media (min-width: 768px) {
+      content: url("../../img/vector_pict/academy_icon.svg");
+      position: absolute;
+      right: -50px;
+      top: -8px;
+    }
+  }
+}
+
+
+.page-footer__copyright-wrapper {
+  min-height: 79px;
+  margin: 28px 0 0 19px;
+
+  @media (min-width: 768px) {
+    margin: 0 0 0 136px;
+    min-height: inherit;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 0 0 391px;
+  }
 }
 
 
 .page-footer__copyright {
   margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
 }
 
-.page-footer__copyright-link {
-  color: var(--special_dark-grey);
+
+.page-footer__wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: 1440px) {
+  }
 }

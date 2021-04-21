@@ -95,6 +95,14 @@
     line-height: 20px;
     padding: 17px 26px;
     font-stretch: condensed;
+
+    &:hover {
+      background-color: var(--basic_green2);
+    }
+
+    &:focus {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   @media (min-width: 1440px) {
@@ -127,7 +135,7 @@
 .page-main__wrapper {
   @media (max-width: 767px) {
     position: relative;
-    background-image: url("../../img/cat/index_mob_bc-img.jpg");
+    background-image: url("../img/cat/index_mob_bc-img.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }

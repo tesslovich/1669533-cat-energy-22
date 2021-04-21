@@ -146,7 +146,7 @@
   position: relative;
 
   @media (min-width: 768px) {
-    background-image: url("../../img/vector_pict/health_one.svg");
+    background-image: url("../img/vector_pict/health_one.svg");
     background-repeat: no-repeat;
     background-position: 47px 71px;
   }
@@ -186,7 +186,7 @@
   position: relative;
 
   @media (min-width: 768px) {
-    background-image: url("../../img/vector_pict/health_two.svg");
+    background-image: url("../img/vector_pict/health_two.svg");
     background-repeat: no-repeat;
     background-position: 41px 66px;
   }
@@ -227,7 +227,7 @@
   position: relative;
 
   @media (min-width: 768px) {
-    background-image: url("../../img/vector_pict/health_three.svg");
+    background-image: url("../img/vector_pict/health_three.svg");
     background-repeat: no-repeat;
     background-position: 44px 48px;
   }
@@ -268,7 +268,7 @@
   position: relative;
 
   @media (min-width: 768px) {
-    background-image: url("../../img/vector_pict/health_four.svg");
+    background-image: url("../img/vector_pict/health_four.svg");
     background-repeat: no-repeat;
     background-position: 43px 50px;
   }
@@ -306,13 +306,13 @@
 
 
 .health__item_food::after {
-  content: url("../../img/vector_pict/health_food.svg");
+  content: url("../img/vector_pict/health_food.svg");
   position: absolute;
   top: 12px;
   left: -61px;
 
   @media (min-width: 768px) {
-    content: url("../../img/vector_pict/health_food.svg");
+    content: url("../img/vector_pict/health_food.svg");
     position: absolute;
     top: 96px;
     left: -53px;
@@ -325,13 +325,13 @@
 
 
 .health__item_production::after {
-  content: url("../../img/vector_pict/health_production.svg");
+  content: url("../img/vector_pict/health_production.svg");
   position: absolute;
   top: 10px;
   left: -65px;
 
   @media (min-width: 768px) {
-    content: url("../../img/vector_pict/health_production.svg");
+    content: url("../img/vector_pict/health_production.svg");
     position: absolute;
     top: 95px;
     left: -56px;
@@ -344,13 +344,13 @@
 
 
 .health__item_change::after {
-  content: url("../../img/vector_pict/health_change.svg");
+  content: url("../img/vector_pict/health_change.svg");
   position: absolute;
   top: 13px;
   left: -62px;
 
   @media (min-width: 768px) {
-    content: url("../../img/vector_pict/health_change.svg");
+    content: url("../img/vector_pict/health_change.svg");
     position: absolute;
     top: 75px;
     left: -53px;
@@ -364,13 +364,13 @@
 
 
 .health__item_time::after {
-  content: url("../../img/vector_pict/health_time.svg");
+  content: url("../img/vector_pict/health_time.svg");
   position: absolute;
   top: 12px;
   left: -66px;
 
   @media (min-width: 768px) {
-    content: url("../../img/vector_pict/health_time.svg");
+    content: url("../img/vector_pict/health_time.svg");
     position: absolute;
     top: 72px;
     left: -57px;

@@ -111,6 +111,28 @@
 }
 
 
+.main-nav__item-link:hover {
+  @media (min-width: 768px) {
+    opacity: 0.9;
+  }
+
+  @media (min-width: 1440px) {
+    opacity: 0.9;
+  }
+}
+
+
+.main-nav__item-link:focus {
+  @media (min-width: 768px) {
+    opacity: 0.6;
+  }
+
+  @media (min-width: 1440px) {
+    opacity: 0.6;
+  }
+}
+
+
 .main-nav__toggle {
   position: absolute;
   top: 19px;

@@ -6,4 +6,8 @@
   color: var(--black);
   min-height: 100%;
   position: relative;
+
+  @media (min-width: 1440px) {
+    margin: 0 auto;
+  }
 }

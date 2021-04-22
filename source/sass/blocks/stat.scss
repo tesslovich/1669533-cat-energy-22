@@ -1,10 +1,14 @@
 .stat {
   @media (min-width: 768px) {
     padding-bottom: 219px;
+    position: relative;
+    margin: 0 auto;
+    width: 708px;
   }
 
   @media (min-width: 1440px) {
     padding-bottom: 119px;
+    width: 1440px;
   }
 }
 
@@ -19,7 +23,7 @@
     width: 702px;
     font-size: 16px;
     line-height: 24px;
-    padding: 49px 0 0 30px;
+    padding: 49px 0 0 0;
   }
 
   @media (min-width: 1440px) {
@@ -57,7 +61,7 @@
     line-height: 37px;
     width: 162px;
     min-height: 70px;
-    margin: 28px 9px 0 30px;
+    margin: 28px 9px 0 1px;
   }
 
   @media (min-width: 1440px) {
@@ -67,6 +71,10 @@
 
 
 .stat__item--time {
+  @media (min-width: 768px) {
+    margin-left: 31px;
+  }
+
   @media (min-width: 1440px) {
     margin: 46px 0 0 32px;
   }
@@ -172,14 +180,14 @@
     font-size: 20px;
     line-height: 20px;
     position: absolute;
-    right: 31px;
-    top: 305px;
+    right: 1px;
+    top: 186px;
     width: 174px;
     text-align: end;
   }
 
   @media (min-width: 1440px) {
     left: 110px;
-    top: 503px;
+    top: 367px;
   }
 }

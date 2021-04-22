@@ -1,5 +1,13 @@
 .page-main__block {
+  max-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    max-width: 709px;
+  }
+
   @media (min-width: 1440px) {
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 696px;
@@ -48,7 +56,7 @@
     font-stretch: condensed;
     transform: scale(1);
     padding: 0;
-    margin: 36px 0 0 118px;
+    margin: 36px 0 0 88px;
     text-align: inherit;
   }
 
@@ -73,7 +81,7 @@
     font-size: 20px;
     line-height: 20px;
     display: block;
-    margin: 40px 0 0 118px;
+    margin: 40px 0 0 89px;
     font-stretch: condensed;
   }
 
@@ -119,8 +127,8 @@
   @media (min-width: 768px) {
     margin: 0;
     position: absolute;
-    top: 229px;
-    left: 112px;
+    top: 230px;
+    left: 83px;
   }
 
   @media (min-width: 1440px) {
@@ -138,6 +146,10 @@
     background-image: url("../img/cat/index_mob_bc-img.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+
+  @media (min-width: 768px) {
+    position: relative;
   }
 }
 
@@ -162,11 +174,7 @@
   }
 
   @media (min-width: 768px) {
-    position: absolute;
-    top: 199px;
-    left: 28px;
-    width: 709px;
-    height: 609px;
+    padding-top: 20px;
   }
 
   @media (min-width: 1440px) {

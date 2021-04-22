@@ -1,13 +1,16 @@
 .example {
   background-color: var(--background_grey);
-  width: 320px;
+  width: 100%;
   padding-bottom: 34px;
+  display: grid;
+  justify-content: center;
 
   @media (min-width: 768px) {
     position: relative;
     width: 100%;
     background-color: var(--white);
     padding: 0;
+    display: block;
   }
 
   @media (min-width: 1440px) {
@@ -17,6 +20,12 @@
 
 
 .example__wrapper {
+  max-width: 320px;
+
+  @media (min-width: 768px) {
+    max-width: 100%;
+  }
+
   @media (min-width: 1440px) {
     background-color: var(--basic_grey);
   }
@@ -34,7 +43,9 @@
   @media (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
-    padding: 44px 0 0 30px;
+    margin: 43px auto 0 auto;
+    padding: 0;
+    width: 708px;
   }
 
   @media (min-width: 1440px) {
@@ -75,7 +86,7 @@
   @media (min-width: 768px) {
     position: absolute;
     top: -190px;
-    left: 30px;
+    left: 31px;
   }
 
   @media (min-width: 1440px) {
@@ -92,13 +103,13 @@
 
   @media (min-width: 768px) {
     position: absolute;
-    top: -187px;
-    left: 384px;
+    top: -185px;
+    left: 383px;
   }
 
   @media (min-width: 1440px) {
-    top: -674px;
-    left: 1020px;
+    top: -669px;
+    left: 1019px;
   }
 }
 

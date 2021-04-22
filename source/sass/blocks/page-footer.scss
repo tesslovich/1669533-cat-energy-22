@@ -1,6 +1,6 @@
 .page-footer {
   background-color: var(--basic_grey);
-  width: 320px;
+  width: 100%;
 
   @media (min-width: 768px) {
     width: 100%;
@@ -27,11 +27,7 @@
   margin-bottom: -2px;
 
   @media (min-width: 768px) {
-    margin: 0 0 0 30px;
-  }
-
-  @media (min-width: 1440px) {
-    margin: 0 0 0 110px;
+    margin: 0 0 0 -49px;
   }
 }
 
@@ -55,13 +51,13 @@
   }
 
   &::after {
-    content: url("../../img/vector_pict/academy_icon.svg");
+    content: url("../img/vector_pict/academy_icon.svg");
     position: absolute;
     right: -168px;
     top: -7px;
 
     @media (min-width: 768px) {
-      content: url("../../img/vector_pict/academy_icon.svg");
+      content: url("../img/vector_pict/academy_icon.svg");
       position: absolute;
       right: -50px;
       top: -8px;
@@ -72,7 +68,10 @@
 
 .page-footer__copyright-wrapper {
   min-height: 79px;
-  margin: 28px 0 0 19px;
+  margin: 28px 0 0 29px;
+  display: flex;
+  justify-content: center;
+  max-width: 320px;
 
   @media (min-width: 768px) {
     margin: 0 0 0 136px;
@@ -97,5 +96,6 @@
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 }

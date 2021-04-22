@@ -16,10 +16,8 @@
   padding: 20px 0 27px 0;
 
   @media (min-width: 768px) {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 49px 0 63px 0;
+    width: 708px;
+    padding-bottom: 63px;
   }
 
   @media (min-width: 1440px) {
@@ -44,8 +42,12 @@
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 24px;
-    margin: 17px 0 0 70px;
+    margin: 47px 0 0 40px;
     width: 171px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 46px 0 0 77px;
   }
 }
 
@@ -60,22 +62,27 @@
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 20px;
-    margin: 14px 72px 0 0;
+    margin: 45px 0 0 295px;
     width: 159px;
     text-align: end;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 44px 0 0 79px;
+    text-align: start;
   }
 }
 
 
 .map__picture {
-  width: 320px;
+  width: 100%;
 
   @media (min-width: 768px) {
-    width: 768px;
+    width: 100%;
     min-height: 400px;
   }
 
   @media (min-width: 1440px) {
-    width: 1440px;
+    width: 100%;
   }
 }

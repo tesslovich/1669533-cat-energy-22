@@ -1,22 +1,39 @@
 .health {
-  margin-top: 27px;
+  margin: 9px auto 48px;
   width: 280px;
 
   @media (min-width: 768px) {
-    width: 708px;
+    width: 100%;
+    border-bottom: 1px solid var(--stroke_grey);
+    margin: 0;
   }
 
   @media (min-width: 1440px) {
-    width: 1219px;
+    width: 1220px;
+    margin: 0 auto;
+    border: none;
   }
 }
 
 
 .health__heading {
-  font-size: 36px;
+  font-size: 33px;
   line-height: 40px;
   margin: 0;
   margin-bottom: 40px;
+  font-stretch: condensed;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    margin: 25px auto 0 auto;
+    width: 708px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 73px 0 0 0;
+  }
 }
 
 
@@ -24,15 +41,346 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  font-family: "Arial", sans-serif;
+
+  @media (min-width: 768px) {
+    margin-left: 31px;
+    display: grid;
+    grid-template-columns: 230px 230px;
+    column-gap: 153px;
+    justify-content: center;
+  }
 
   @media (min-width: 1440px) {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    column-gap: 0;
   }
 }
 
 
 .health__item {
+  margin-left: 80px;
   margin-bottom: 25px;
   color: var(--special_dark-grey);
+
+  @media (min-width: 768px) {
+    width: 230px;
+    min-height: 312px;
+    position: relative;
+    margin-left: 18px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+}
+
+
+.health__item-text--food {
+  @media (min-width: 768px) {
+    position: absolute;
+    width: 201px;
+    top: 168px;
+    left: -81px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 166px;
+    left: -1px;
+  }
+}
+
+
+.health__item-text--production {
+  @media (min-width: 768px) {
+    position: absolute;
+    width: 227px;
+    top: 169px;
+    left: -81px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 166px;
+    left: 12px;
+  }
+}
+
+
+.health__item-text--change {
+  @media (min-width: 768px) {
+    position: absolute;
+    width: 227px;
+    top: 148px;
+    left: -81px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 166px;
+    left: 9px;
+  }
+}
+
+
+.health__item-text--time {
+  @media (min-width: 768px) {
+    position: absolute;
+    width: 245px;
+    top: 148px;
+    left: -80px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 166px;
+    left: 5px;
+  }
+}
+
+.health__item_food {
+  position: relative;
+
+  @media (min-width: 768px) {
+    background-image: url("../img/vector_pict/health_one.svg");
+    background-repeat: no-repeat;
+    background-position: 47px 71px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 230px;
+    background-position: 125px 71px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--basic_green);
+
+    @media (min-width: 768px) {
+      content: "";
+      position: absolute;
+      top: 70px;
+      left: -80px;
+      width: 80px;
+      height: 80px;
+      background-color: var(--basic_green);
+    }
+
+    @media (min-width: 1440px) {
+      left: -1px;
+    }
+  }
+}
+
+
+.health__item_production {
+  position: relative;
+
+  @media (min-width: 768px) {
+    background-image: url("../img/vector_pict/health_two.svg");
+    background-repeat: no-repeat;
+    background-position: 41px 66px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 246px;
+    background-position: 133px 66px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--basic_green);
+
+    @media (min-width: 768px) {
+      content: "";
+      position: absolute;
+      top: 71px;
+      left: -80px;
+      width: 80px;
+      height: 80px;
+      background-color: var(--basic_green);
+    }
+
+    @media (min-width: 1440px) {
+      left: 13px;
+      width: 80px;
+    }
+  }
+}
+
+
+.health__item_change {
+  position: relative;
+
+  @media (min-width: 768px) {
+    background-image: url("../img/vector_pict/health_three.svg");
+    background-repeat: no-repeat;
+    background-position: 44px 48px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 248px;
+    background-position: 132px 65px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--basic_green);
+
+    @media (min-width: 768px) {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: -81px;
+      width: 80px;
+      height: 80px;
+      background-color: var(--basic_green);
+    }
+
+    @media (min-width: 1440px) {
+      top: 70px;
+      left: 10px;
+    }
+  }
+}
+
+
+.health__item_time {
+  position: relative;
+
+  @media (min-width: 768px) {
+    background-image: url("../img/vector_pict/health_four.svg");
+    background-repeat: no-repeat;
+    background-position: 43px 50px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 250px;
+    background-position: 130px 70px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--basic_green);
+
+    @media (min-width: 768px) {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: -80px;
+      width: 80px;
+      height: 80px;
+      background-color: var(--basic_green);
+    }
+
+    @media (min-width: 1440px) {
+      top: 70px;
+      left: 6px;
+    }
+  }
+}
+
+
+.health__item_food::after {
+  content: url("../img/vector_pict/health_food.svg");
+  position: absolute;
+  top: 12px;
+  left: -61px;
+
+  @media (min-width: 768px) {
+    content: url("../img/vector_pict/health_food.svg");
+    position: absolute;
+    top: 96px;
+    left: -53px;
+  }
+
+  @media (min-width: 1440px) {
+    left: 27px;
+  }
+}
+
+
+.health__item_production::after {
+  content: url("../img/vector_pict/health_production.svg");
+  position: absolute;
+  top: 10px;
+  left: -65px;
+
+  @media (min-width: 768px) {
+    content: url("../img/vector_pict/health_production.svg");
+    position: absolute;
+    top: 95px;
+    left: -56px;
+  }
+
+  @media (min-width: 1440px) {
+    left: 38px;
+  }
+}
+
+
+.health__item_change::after {
+  content: url("../img/vector_pict/health_change.svg");
+  position: absolute;
+  top: 13px;
+  left: -62px;
+
+  @media (min-width: 768px) {
+    content: url("../img/vector_pict/health_change.svg");
+    position: absolute;
+    top: 75px;
+    left: -53px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 95px;
+    left: 38px;
+  }
+}
+
+
+.health__item_time::after {
+  content: url("../img/vector_pict/health_time.svg");
+  position: absolute;
+  top: 12px;
+  left: -66px;
+
+  @media (min-width: 768px) {
+    content: url("../img/vector_pict/health_time.svg");
+    position: absolute;
+    top: 72px;
+    left: -57px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 93px;
+    left: 30px;
+  }
 }

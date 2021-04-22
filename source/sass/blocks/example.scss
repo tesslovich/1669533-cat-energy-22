@@ -1,34 +1,168 @@
 .example {
   background-color: var(--background_grey);
-  width: 320px;
+  width: 100%;
+  padding-bottom: 34px;
+  display: grid;
+  justify-content: center;
 
   @media (min-width: 768px) {
-    width: 708px;
+    position: relative;
+    width: 100%;
+    background-color: var(--white);
+    padding: 0;
+    display: block;
   }
 
   @media (min-width: 1440px) {
-    width: 1219px;
+    width: 100%;
+  }
+}
+
+
+.example__wrapper {
+  max-width: 320px;
+
+  @media (min-width: 768px) {
+    max-width: 100%;
+  }
+
+  @media (min-width: 1440px) {
+    background-color: var(--basic_grey);
   }
 }
 
 
 .example__heading {
   margin: 0;
-  margin-bottom: 33px;
+  padding: 27px 0 16px 20px;
   font-size: 36px;
   line-height: 40px;
+  font-stretch: condensed;
+  font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 43px auto 0 auto;
+    padding: 0;
+    width: 708px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0;
+    margin: 69px 0 75px 110px;
+  }
 }
 
 
-.example__slider-image {
-  margin-bottom: 20px;
+.example__picture-box {
+  @media (min-width: 768px) {
+    position: relative;
+    min-height: 462px;
+    background-color: var(--background_grey);
+    width: 100%;
+  }
+
+  @media (min-width: 1440px) {
+    min-height: 0;
+  }
 }
 
 
-.example__button-past,
+.example__slider-image--fat-mob {
+  margin: 40px 0 29px 0;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+
+.example__slider-image--fat-tablet {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: -190px;
+    left: 31px;
+  }
+
+  @media (min-width: 1440px) {
+    top: -673px;
+    left: 666px;
+  }
+}
+
+
+.example__slider-image--slim-tablet {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: -185px;
+    left: 383px;
+  }
+
+  @media (min-width: 1440px) {
+    top: -669px;
+    left: 1019px;
+  }
+}
+
+
+.example__button-past {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  margin-left: 57px;
+  font-stretch: condensed;
+  background-color: transparent;
+  font-family: inherit;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    bottom: 67px;
+    left: 98px;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: dotted;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: 1440px) {
+    left: 759px;
+  }
+}
+
+
 .example__button-future {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   border: none;
+  margin-left: 104px;
+  font-stretch: condensed;
+  background-color: transparent;
+  font-family: inherit;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    bottom: 67px;
+    left: 617px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    border-bottom: dotted;
+  }
+
+  @media (min-width: 1440px) {
+    left: 1278px;
+  }
 }

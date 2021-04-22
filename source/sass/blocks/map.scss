@@ -1,44 +1,88 @@
+.map {
+  @media (min-width: 1440px) {
+    position: relative;
+  }
+}
+
+
 .map__wrapper {
   background-color: var(--white);
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
   width: 320px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 20px 0 27px 0;
 
   @media (min-width: 768px) {
-    width: 768px;
+    width: 708px;
+    padding-bottom: 63px;
   }
 
   @media (min-width: 1440px) {
     width: 570px;
+    position: absolute;
+    top: 94px;
+    left: 109px;
   }
 }
 
 
 .map__title {
+  width: 140px;
+  min-height: 58px;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
-  margin: 0;
-  padding: 10px 0 10px 0;
+  margin: 10px 0 0 20px;
+  font-stretch: condensed;
+  font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 47px 0 0 40px;
+    width: 171px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 46px 0 0 77px;
+  }
 }
 
 
 .map__adress {
+  width: 140px;
   font-size: 14px;
   line-height: 20px;
-  margin: 0;
-  padding: 10px 0 10px 0;
+  margin: 9px 0 0 1px;
+  font-family: "Arial", sans-serif;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 45px 0 0 295px;
+    width: 159px;
+    text-align: end;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 44px 0 0 79px;
+    text-align: start;
+  }
 }
 
 
 .map__picture {
-  width: 320px;
+  width: 100%;
 
   @media (min-width: 768px) {
-    width: 768px;
+    width: 100%;
+    min-height: 400px;
   }
 
   @media (min-width: 1440px) {
-    width: 1440px;
+    width: 100%;
   }
 }

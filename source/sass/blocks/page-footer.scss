@@ -68,9 +68,9 @@
 
 .page-footer__copyright-wrapper {
   min-height: 79px;
-  margin: 28px 0 0 29px;
+  margin: 28px 0 0 19px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 320px;
 
   @media (min-width: 768px) {

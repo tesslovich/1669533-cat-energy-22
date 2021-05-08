@@ -50,12 +50,26 @@
 }
 
 
+.main-nav__list--form {
+  @media (min-width: 1440px) {
+    color: var(--black);
+  }
+}
+
+
 .main-nav__item-link {
   text-decoration: none;
   color: var(--black);
 
   @media (min-width: 1440px) {
     color: var(--white);
+  }
+}
+
+
+.main-nav__item-link--form {
+  @media (min-width: 1440px) {
+    color: var(--black);
   }
 }
 
@@ -83,7 +97,7 @@
 
   @media (min-width: 1440px) {
     padding: 0;
-    margin: 0 0 0 42px;
+    margin: 0 -7px 0 43px;
 
     &:hover {
       opacity: 0.6;
@@ -108,6 +122,13 @@
 
   @media (min-width: 1440px) {
     border-bottom: 2px solid var(--white);
+  }
+}
+
+
+.main-nav__item_activ-form {
+  @media (min-width: 768px) {
+    border-bottom: 2px solid var(--basic_green);
   }
 }
 

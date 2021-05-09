@@ -1,17 +1,112 @@
 .radio {
   color: var(--special_dark-grey-2);
-  margin: 0 0 26px 0;
+  margin: 0 auto;
+  width: 276px;
+  border: none;
+  border-bottom: 1px solid var(--form_box);
+  padding-bottom: 11px;
+
+  @media (min-width: 768px) {
+    width: 630px;
+    margin-top: 39px;
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 185px;
+    border: 1px solid var(--form_box);
+  }
+
+  @media (min-width: 1440px) {
+    width: 568px;
+    max-height: 185px;
+    margin-top: 65px;
+  }
 }
 
 
 .radio__list {
   list-style: none;
   padding: 0;
-  margin: 0;
   text-transform: uppercase;
+  margin-top: 21px;
+  margin-bottom: -6px;
+
+  @media (min-width: 768px) {
+    padding-top: 4px;
+    padding-left: 31px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 3px;
+    padding-left: 32px;
+  }
 }
 
 
 .radio__item {
-  margin: 0 0 13px 0;
+  position: relative;
+  margin-bottom: 9px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 5px;
+  }
+}
+
+
+.radio__custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+
+.radio__custom-radio + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+
+.radio__custom-radio + label::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-left: -3px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+
+  @media (min-width: 768px) {
+    margin-right: 19px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+.radio__custom-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  right: 256px;
+  top: 9px;
+  border-radius: 50%;
+  background-color: var(--basic_green);
+
+  @media (min-width: 768px) {
+    width: 18px;
+    height: 18px;
+    right: 572px;
+    top: 12px;
+  }
+
+  @media (min-width: 1440px) {
+    right: 509px;
+  }
 }

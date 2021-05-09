@@ -16,9 +16,16 @@
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
+    width: 1440px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.page-header--form {
+  @media (min-width: 1440px) {
+    position: inherit;
+    width: 1440px;
   }
 }
 

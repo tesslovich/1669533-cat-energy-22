@@ -9,10 +9,15 @@
 .page-form {
   line-height: 18px;
   font-size: 16px;
+}
+
+
+.page-form__wrapper {
+  margin: 0 auto;
   width: 320px;
 
   @media (min-width: 768px) {
-    width: 768px;
+    width: 630px;
   }
 
   @media (min-width: 1440px) {
@@ -24,13 +29,39 @@
 .page-form__title {
   font-size: 36px;
   line-height: 36px;
-  margin: 0 0 37px 0;
+  width: 259px;
+  font-weight: normal;
+  margin: 28px 0 10px 20px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    width: 432px;
+    margin: 35px 0 0 0;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 68px 0 0 0;
+  }
 }
 
 
 .page-form__subtitle {
   font-size: 14px;
   line-height: 18px;
-  margin: 0;
   text-transform: uppercase;
+  font-weight: normal;
+  width: 226px;
+  margin: 38px 0 10px 20px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    margin: 55px 0 0 1px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 56px 0 0 0;
+  }
 }

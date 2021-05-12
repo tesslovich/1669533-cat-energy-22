@@ -91,6 +91,10 @@
     margin: 0 0 0 24px;
     font-size: 20px;
     line-height: 30px;
+
+    &:hover {
+      border-color: var(--example_line);
+    }
   }
 
   @media (min-width: 1440px) {

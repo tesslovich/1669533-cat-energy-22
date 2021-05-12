@@ -33,6 +33,10 @@
   margin-left: 9px;
   border: 1px solid var(--form_box);
 
+  &:invalid {
+    border-color: var(--error);
+  }
+
   @media (min-width: 768px) {
     width: 545px;
     font-size: 20px;
@@ -40,6 +44,10 @@
     margin-left: 12px;
     padding-left: 17px;
     min-height: 47px;
+
+    &:hover {
+      border-color: var(--example_line);
+    }
   }
 
   @media (min-width: 1440px) {
@@ -59,11 +67,19 @@
   margin-left: 13px;
   border: 1px solid var(--form_box);
 
+  &:invalid {
+    border-color: var(--error);
+  }
+
   @media (min-width: 768px) {
     width: 513px;
     margin-left: 16px;
     padding-left: 18px;
     min-height: 46px;
+
+    &:hover {
+      border-color: var(--example_line);
+    }
   }
 
   @media (min-width: 1440px) {
@@ -88,6 +104,10 @@
     min-height: 46px;
     margin-left: 14px;
     padding-left: 17px;
+
+    &:hover {
+      border-color: var(--example_line);
+    }
   }
 
   @media (min-width: 1440px) {

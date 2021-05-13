@@ -250,7 +250,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/vector_pict/icon_bonus.svg");
+    background-image: url("../img/vector_pict/icon_bonus.svg");
     width: 78px;
     height: 80px;
     top: 59px;
@@ -269,7 +269,7 @@
 
   @media (min-width: 768px) {
     margin: 67px 0 -15px 0;
-    background-image: url("../../img/vector_pict/icon_bonus-tablet.jpg");
+    background-image: url("../img/vector_pict/icon_bonus-tablet.jpg");
   }
 
   @media (min-width: 1440px) {
@@ -302,5 +302,39 @@
     bottom: 43px;
     left: 41px;
     text-align: center;
+  }
+}
+
+
+.additional-goods__table__size--liter {
+  @media (min-width: 768px) {
+    margin-left: 66px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+}
+
+
+.additional-goods__table__size--liter-second {
+  @media (min-width: 768px) {
+    margin-left: 84px;
+    margin-top: -2px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+}
+
+
+.additional-goods__table__size--liter-third {
+  @media (min-width: 768px) {
+    margin-left: 8px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
   }
 }

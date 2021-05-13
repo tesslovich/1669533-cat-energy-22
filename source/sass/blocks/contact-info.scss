@@ -106,6 +106,10 @@
   font-size: 16px;
   line-height: 18px;
 
+  &:invalid {
+    border-color: var(--error);
+  }
+
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
@@ -113,6 +117,10 @@
     min-height: 47px;
     margin: 0 0 0 13px;
     padding-left: 21px;
+
+    &:hover {
+      border-color: var(--example_line);
+    }
   }
 
   @media (min-width: 1440px) {
@@ -148,6 +156,10 @@
   line-height: 18px;
   padding-left: 14px;
 
+  &:invalid {
+    border-color: var(--error);
+  }
+
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
@@ -155,6 +167,10 @@
     min-height: 47px;
     margin: 0 0 0 8px;
     padding-left: 18px;
+
+    &:hover {
+      border-color: var(--example_line);
+    }
   }
 
   @media (min-width: 1440px) {

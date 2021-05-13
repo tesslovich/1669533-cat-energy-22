@@ -1,11 +1,19 @@
 .map {
-  @media (min-width: 1440px) {
-    position: relative;
-  }
+  position: relative;
 }
+
 
 .map--form {
   background-color: var(--basic_grey);
+}
+
+
+.map__box {
+  @media (min-width: 1440px) {
+    width: 1440px;
+    position: relative;
+    margin: 0 auto;
+  }
 }
 
 
@@ -35,6 +43,10 @@
 
 .map__wrapper--form {
   background-color: var(--basic_grey);
+
+  @media (min-width: 1440px) {
+    background-color: var(--white);
+  }
 }
 
 
@@ -42,11 +54,12 @@
   width: 140px;
   min-height: 58px;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 21px;
   text-transform: uppercase;
-  margin: 10px 0 0 20px;
+  margin: 8px 0 0 20px;
   font-stretch: condensed;
-  font-weight: 400;
+  font-weight: normal;
+  font-family: "Oswald", "Arial", sans-serif;
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -56,7 +69,7 @@
   }
 
   @media (min-width: 1440px) {
-    margin: 46px 0 0 77px;
+    margin: 46px 0 0 81px;
   }
 }
 
@@ -93,5 +106,12 @@
 
   @media (min-width: 1440px) {
     width: 100%;
+  }
+}
+
+
+.map__br {
+  @media (max-width: 767px) {
+    display: none;
   }
 }

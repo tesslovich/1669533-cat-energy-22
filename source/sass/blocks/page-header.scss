@@ -113,16 +113,20 @@
     }
   }
 
-  @media (min-width: 1440px) {
-    width: 202px;
-    height: 59px;
-    margin: 54px 0 0 109px;
+  @media (min-width: 1439px) {
+    display: none;
   }
 }
 
 
-.page-header__logo-desk {
+.page-header__logo-desktop {
   @media (max-width: 1439px) {
     display: none;
+  }
+
+  @media (min-width: 1440px) {
+    width: 202px;
+    height: 59px;
+    margin: 54px 0 0 109px;
   }
 }

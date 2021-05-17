@@ -95,47 +95,20 @@
 }
 
 
-.example__slider-image--fat-mob {
+.example__slider-image {
   margin: 40px 0 29px 0;
 
   @media (min-width: 768px) {
-    display: none;
-  }
-}
-
-
-.example__slider-image--fat-tablet {
-  @media (max-width: 767px) {
-    display: none;
-  }
-
-  @media (min-width: 768px) {
+    width: 677px;
+    height: 520px;
     position: absolute;
-    top: -190px;
-    left: 31px;
+    top: -213px;
+    left: 46px;
   }
 
   @media (min-width: 1440px) {
-    top: -673px;
-    left: 666px;
-  }
-}
-
-
-.example__slider-image--slim-tablet {
-  @media (max-width: 767px) {
-    display: none;
-  }
-
-  @media (min-width: 768px) {
-    position: absolute;
-    top: -185px;
-    left: 383px;
-  }
-
-  @media (min-width: 1440px) {
-    top: -669px;
-    left: 1019px;
+    top: -694px;
+    left: 679px;
   }
 }
 

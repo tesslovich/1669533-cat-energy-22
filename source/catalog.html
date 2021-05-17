@@ -18,14 +18,13 @@
     <div class="page-header__wrapper">
       <div class="wrapper">
         <a href="index.html" class="page-header__logo">
-          <img class="page-header__logo-image" src="./img/logo/logo_mob/logo_picture_mob.svg" width="33" height="37"
-            alt="Логотип Кэт Энерджи">
-          <img class="page-header__logo-text" src="./img/logo/logo_mob/logo_text_mob.svg" width="101" height="18"
-            alt="Логотип Кэт Энерджи">
-          <img class="page-header__logo-tablet" src="./img/logo/logo_tablet/logo_tablet.svg" width="144" height="51"
-            alt="Логотип Кэт Энерджи">
-          <img class="page-header__logo-desktop" src="./img/logo/logo_desktop.svg" width="202" height="59"
-            alt="Логотип Кэт Энерджи">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/logo/logo_desktop.svg 1x, img/logo/logo-desktop-retina.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="./img/logo/logo_tablet/logo_tablet.svg 1x, ./img/logo/logo_tablet/retina/logo-tablet.jpg 2x">
+            <img class="page-header__logo-image" src="./img/logo/logo_mob/logo_picture_mob.svg" width="190" height="38"
+              alt="Логотип Кэт Энерджи">
         </a>
       </div>
       <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -60,11 +59,13 @@
         <li class="page-catalog__item">
           <div class="page-catalog__cart product-cart">
             <picture>
+
               <source media="(min-width: 768px)"
                 srcset="./img/cat-energy/cat-energy-tablet/cat-energy-pro_chiken.png 1x, ./img/cat-energy/cat-energy-tablet/retina/cat-energy-pro_chiken.png 2x">
               <img class="product-cart__img" src="./img/cat-energy/cat-energy-mob/cat-energy-pro-chiken-500.png"
                 srcset="./img/cat-energy/cat-energy-mob/retina/cat-energy-pro-chiken-500.png 2x" width="68" height="86"
                 alt="Кэт энерджи с курицой">
+
             </picture>
             <div class="product-cart__wrapper">
               <h3 class="product-cart__heading">Cat Energy PRO 500 г</h3>

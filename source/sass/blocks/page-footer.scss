@@ -50,17 +50,9 @@
     line-height: 18px;
   }
 
-  &::after {
-    content: url("../img/vector_pict/academy_icon.svg");
-    position: absolute;
-    right: -168px;
-    top: -7px;
-
-    @media (min-width: 768px) {
-      content: url("../img/vector_pict/academy_icon.svg");
-      position: absolute;
-      right: -50px;
-      top: -8px;
+  @media (min-width: 1440px) {
+    &:focus {
+      opacity: 0.5;
     }
   }
 }
@@ -89,6 +81,30 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+}
+
+
+.page-footer__copyright-icon {
+  position: absolute;
+  top: -6px;
+  left: 253px;
+  width: 27px;
+  height: 34px;
+  stroke: #666666;
+
+  @media (min-width: 768px) {
+    top: -8px;
+    left: 136px;
+  }
+
+  @media (min-width: 1440px) {
+    top: -8px;
+    left: 136px;
+
+    &:hover {
+      stroke: var(--basic_green);
+    }
+  }
 }
 
 

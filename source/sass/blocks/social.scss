@@ -23,6 +23,18 @@
 }
 
 
+.social__icon {
+  &:hover {
+    stroke: var(--basic_green);
+  }
+
+  &:active {
+    stroke: var(--basic_green);
+    opacity: 0.5;
+  }
+}
+
+
 .social__link_vkontakte {
   padding-left: 73px;
 

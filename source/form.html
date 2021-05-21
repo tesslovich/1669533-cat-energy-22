@@ -21,7 +21,8 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo/logo_desktop.svg">
             <source media="(min-width: 768px)" srcset="./img/logo/logo_tablet/logo_tablet.svg">
-            <img class="page-header__logo-image" src="./img/logo/logo_mob/logo_picture_mob.svg" width="190" height="38" alt="Логотип Кэт Энерджи">
+            <img class="page-header__logo-image" src="./img/logo/logo_mob/logo_picture_mob.svg" width="190" height="38"
+              alt="Логотип Кэт Энерджи">
           </picture>
         </a>
       </div>
@@ -101,6 +102,9 @@
             <label for="email">E-mail:*</label>
             <input class="contact-info__email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
               required>
+            <svg class="contact-info__email-icon">
+              <use xlink:href="./img/sprite.svg#email-icon"></use>
+            </svg>
           </li>
           <li class="contact-info__item contact-info__item--tel">
             <label for="tel">Телефон:*</label>
@@ -191,7 +195,8 @@
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
             <svg class="page-footer__copyright-icon" width="27" height="34" fill="none">
               <use xlink:href="./img/sprite.svg#academy-icon"></use>
-            </svg></a>
+            </svg>
+          </a>
         </p>
       </div>
     </div>

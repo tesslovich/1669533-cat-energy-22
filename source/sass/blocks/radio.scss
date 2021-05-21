@@ -89,6 +89,16 @@
 }
 
 
+.radio__custom-radio:hover + label::before {
+  border: 1px solid var(--hover_radio);
+}
+
+
+.radio__custom-radio:disabled + label {
+  opacity: 0.3;
+}
+
+
 .radio__custom-radio:checked + label::after {
   content: "";
   position: absolute;

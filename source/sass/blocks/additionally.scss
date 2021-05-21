@@ -167,3 +167,13 @@
     top: 11px;
   }
 }
+
+
+.additionally__checkbox:hover + label::before {
+  border: 1px solid var(--hover_radio);
+}
+
+
+.additionally__checkbox:disabled + label {
+  opacity: 0.3;
+}

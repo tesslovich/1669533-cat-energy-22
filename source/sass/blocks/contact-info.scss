@@ -108,6 +108,7 @@
 
   &:invalid {
     border-color: var(--error);
+    color: red;
   }
 
   @media (min-width: 768px) {
@@ -129,20 +130,33 @@
 }
 
 
-.contact-info__item--email::after {
-  content: url("../img/vector_pict/email_pict.svg");
+.contact-info__email-icon {
   position: absolute;
-  left: 266px;
-  top: 13px;
+  top: 14px;
+  right: 32px;
+  width: 26px;
+  height: 12.5px;
+  stroke: var(--special_dark-grey-2);
+  // color: red;
 
   @media (min-width: 768px) {
-    left: 616px;
-    top: 49px;
+    top: 56px;
+    right: 11px;
+    width: 26px;
+    height: 14.5px;
   }
 
   @media (min-width: 1440px) {
-    left: 552px;
+    top: 60px;
+    right: 662px;
+    width: 32px;
+    height: 13.5px;
   }
+}
+
+
+.contact-info__email-icon:hover {
+  stroke: var(--basic_green);
 }
 
 

@@ -137,7 +137,6 @@
   width: 26px;
   height: 12.5px;
   stroke: var(--special_dark-grey-2);
-  // color: red;
 
   @media (min-width: 768px) {
     top: 56px;
@@ -155,7 +154,12 @@
 }
 
 
-.contact-info__email-icon:hover {
+// .contact-info__email--error:required + .contact-info__email-icon {
+//   stroke: var(--error);
+// }
+
+
+.contact-info__email:focus + .contact-info__email-icon {
   stroke: var(--basic_green);
 }
 

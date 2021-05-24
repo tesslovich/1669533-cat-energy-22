@@ -54,6 +54,10 @@
     &:focus {
       opacity: 0.5;
     }
+
+    &:hover .page-footer__copyright-icon {
+      fill: var(--basic_green);
+    }
   }
 }
 
@@ -90,7 +94,7 @@
   left: 253px;
   width: 27px;
   height: 34px;
-  stroke: #666666;
+  fill: #666666;
 
   @media (min-width: 768px) {
     top: -8px;
@@ -102,7 +106,7 @@
     left: 136px;
 
     &:hover {
-      stroke: var(--basic_green);
+      fill: var(--basic_green);
     }
   }
 }

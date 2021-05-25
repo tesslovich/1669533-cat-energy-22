@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="widht=device-widht, initial-scale=1">
   <title>Каталог продукции Кэт Энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./img/favicon/favicon-16.svg" type="image/svg+xml">
   <link rel="icon" href="./img/favicon/favicon-32.svg" type="image/svg+xml">
@@ -59,9 +59,9 @@
           <div class="page-catalog__cart product-cart">
             <picture>
               <source type="image/webp" media="(min-width: 768px)"
-                srcset="./img/cat-energy/cat-energy-tablet/cat-energy-pro_chiken_webp.webp 1x, ./img/cat-energy/cat-energy-tablet/cat-energy-pro_chiken_webp@2x.webp 2x">
+                srcset="./img/cat-energy/cat-energy-tablet/cat-energy-pro_chiken.webp 1x, ./img/cat-energy/cat-energy-tablet/cat-energy-pro_chiken@2x.webp 2x">
               <source type="image/webp"
-                srcset="./img/cat-energy/cat-energy-mob/cat-energy-pro-chiken-500_webp.webp 1x, ./img/cat-energy/cat-energy-mob/cat-energy-pro-chiken-500_webp@2x.webp 2x">
+                srcset="./img/cat-energy/cat-energy-mob/cat-energy-pro-chiken-500.webp 1x, ./img/cat-energy/cat-energy-mob/cat-energy-pro-chiken-500@2x.webp 2x">
               <source media="(min-width: 768px)"
                 srcset="./img/cat-energy/cat-energy-tablet/cat-energy-pro_chiken.png 1x, ./img/cat-energy/cat-energy-tablet/retina/cat-energy-pro_chiken@2x.png 2x">
               <img class="product-cart__img" src="./img/cat-energy/cat-energy-mob/cat-energy-pro-chiken-500.png"
@@ -384,24 +384,7 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>

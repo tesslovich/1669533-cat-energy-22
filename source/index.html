@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="widht=device-widht, initial-scale=1">
   <title>Кэт энерджи</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./img/favicon/favicon-16.svg" type="image/svg+xml">
   <link rel="icon" href="./img/favicon/favicon-32.svg" type="image/svg+xml">
@@ -59,11 +59,11 @@
           <p class="page-main__subtitle">Занялся собой? Займись котом!</p>
           <picture>
             <source type="image/webp" media="(min-width: 1440px)"
-              srcset="./img/cat-energy/cat-energy_main_desktop_webp.webp 1x, ./img/cat-energy/cat-energy_main_desktop_webp@2x.webp 2x">
+              srcset="./img/cat-energy/cat-energy_main_desktop.webp 1x, ./img/cat-energy/cat-energy_main_desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="./img/cat/index_cat-energy_tablet-img_webp.webp 1x, ./img/cat/index_cat-energy_tablet-img_webp@2x.webp 2x">
+              srcset="./img/cat/index_cat-energy_tablet-img.webp 1x, ./img/cat/index_cat-energy_tablet-img@2x.webp 2x">
             <source type="image/webp"
-              srcset="./img/cat-energy/cat-energy_main-page_webp.webp 1x, ./img/cat-energy/cat-energy_main-page_webp@2x.webp 2x">
+              srcset="./img/cat-energy/cat-energy_main-page.webp 1x, ./img/cat-energy/cat-energy_main-page@2x.webp 2x">
             <source media="(min-width: 1440px)"
               srcset="./img/cat-energy/cat-energy_main_desktop.png 1x, ./img/cat-energy/cat-energy_main_desktop@2x.png 2x">
             <source media="(min-width: 768px)"
@@ -200,7 +200,7 @@
         <li class="social__item">
           <a class="social__link social__link_vkontakte" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Мы в Вконтакте </span>
-            <svg class="social__icon social__icon--vk" width="23" height="13" fill="none">
+            <svg class="social__icon social__icon--vk" width="23" height="13">
               <use xlink:href="./img/sprite.svg#vk-icon"></use>
             </svg>
           </a>
@@ -208,7 +208,7 @@
         <li class="social__item">
           <a class="social__link social__link_instagram" href="https://www.instagram.com/htmlacademy">
             <span class="visually-hidden">Мы в Инстаграме</span>
-            <svg class="social__icon social__icon--inst" width="16" height="16" fill="none">
+            <svg class="social__icon social__icon--inst" width="16" height="16">
               <use xlink:href="./img/sprite.svg#inst-icon"></use>
             </svg>
           </a>
@@ -216,7 +216,7 @@
         <li class="social__item">
           <a class="social__link social__link_facebook" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Мы в Фейсбуке</span>
-            <svg class="social__icon social__icon--fb" width="11" height="18" fill="none">
+            <svg class="social__icon social__icon--fb" width="11" height="18">
               <use xlink:href="./img/sprite.svg#fb-icon"></use>
             </svg>
           </a>
@@ -225,7 +225,7 @@
       <div class="page-footer__copyright-wrapper">
         <p class="page-footer__copyright">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-            <svg class="page-footer__copyright-icon" width="27" height="34" fill="none">
+            <svg class="page-footer__copyright-icon" width="27" height="34">
               <use xlink:href="./img/sprite.svg#academy-icon"></use>
             </svg>
           </a>
@@ -233,23 +233,7 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -154,11 +154,6 @@
 }
 
 
-// .contact-info__email--error:required + .contact-info__email-icon {
-//   stroke: var(--error);
-// }
-
-
 .contact-info__email:focus + .contact-info__email-icon {
   stroke: var(--basic_green);
 }
